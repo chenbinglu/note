@@ -12,42 +12,116 @@
         android:layout_height="100dp"
         android:layout_centerInParent="false"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="98dp"
+        android:layout_marginTop="90dp"
         android:src="@drawable/add_tou"
         />
     <LinearLayout
         android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="50dp"
         android:orientation="horizontal"
-        android:layout_below="@id/touxiang">
+        android:layout_below="@id/touxiang"
+        android:layout_centerHorizontal="true"
+        >
         <android.support.v7.widget.AppCompatImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/tou"/>
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="225dp"
+            android:layout_height="25dp"
+            android:background="@null" />
     </LinearLayout>
+    <TextView
+        android:id="@+id/li01"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/username"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:text="your name"/>
     <LinearLayout
         android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="38dp"
         android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/username">
         <android.support.v7.widget.AppCompatImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/lock"/>
+        <EditText
+
+            android:id="@+id/register_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@null"
+            />
     </LinearLayout>
+    <TextView
+        android:id="@+id/li02"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/password"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="1dp"
+        android:background="#eee"
+        />
     <LinearLayout
         android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="38dp"
         android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/password">
         <android.support.v7.widget.AppCompatImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp" />
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/lock"/>
+        <EditText
+            android:id="@+id/register_mail"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@null"
+            />
     </LinearLayout>
-
+    <TextView
+        android:id="@+id/li03"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/email"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="1dp"
+        android:background="#eee"
+        />
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@id/email"
+        android:layout_marginTop="60dp">
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/register_bg"
+            android:text="Sign up"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/login_bg"
+            android:textColor="#000"
+            android:text="Sign in"/>
+    </LinearLayout>
 
 </RelativeLayout>
